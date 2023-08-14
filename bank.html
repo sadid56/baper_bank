@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="mt-10">
+        <h1 class="font-semibold text-emerald-400 text-3xl lg:text-5xl text-center mt-5">Wowww! baper mooooney 😮🤑!!!</h1>
+    </header>
+    <main class="max-w-screen-xl mx-auto">
+        <section class="mx-auto container px-5 mt-5">
+            <div class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div class="bg-green-300 p-9 rounded-xl">
+                    <h2 class="text-white font-semibold text-3xl">Deposit</h2 >
+                    <h4 class="text-white font-semibold text-5xl">$ <span  id="deposite-account">00</span></h4>
+                </div>
+                <div class="bg-blue-300 p-9 rounded-xl">
+                    <h2 class="text-white font-semibold text-3xl">Withdraw</h2 >
+                    <h4 class="text-white font-semibold text-5xl">$<span id="total-withdraw">00</span></h4>
+                </div>
+                <div class="bg-pink-300 p-9 rounded-xl">
+                    <h2 class="text-white font-semibold text-3xl">Balance</h2 >
+                    <h4 class="text-white font-semibold text-5xl">$<span id="corrent-balance">1000</span></h4>
+                </div>
+            </div>
+           
+        </section>
+        <!-- Deposit and Withdraw sectiom -->
+        <section class="mt-16 w-fit mx-auto ">
+            <div class=" flex gap-5 justify-center flex-col md:flex-row  ">
+                <div class="card w-96 bg-violet-400 shadow-xl">
+                    
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-white font-semibold text-3xl">Please Deposite</h2>
+                      <input type="text" id="deposite-input" placeholder="$ Amount you want to Deposit" class="input input-bordered w-full max-w-xs" />
+                      <div>
+                        <button id="deposite-btn" class="btn btn-primary normal">Deposit</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card w-96 bg-purple-400 shadow-xl">
+                    
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title text-white font-semibold text-3xl">Please Withdraw</h2>
+                      <input id="withdraw-input" type="text" placeholder="$ Amount you want to Withdraw" class="input input-bordered w-full max-w-xs" />
+                      <div>
+                        <button id="withdraw-btn" class="btn btn-primary normal">Withdraw</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </main>
+<script src="js/bank.js"></script>
+</body>
+</html>
